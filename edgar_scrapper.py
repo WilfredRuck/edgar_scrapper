@@ -7,7 +7,9 @@ class BlogSpider(scrapy.Spider):
   def parse(self, response):
     filings = []
     for filing in response.css('tr'):
-      filings.append(filing.css('td::text').get())
+      file = filing.css('td::text').get()
+      if file is not None and "13F" in file:
+        filings.append(filing.css('td::text').get())
     # for next_page in response.css('a.next-posts-link'):
     #     yield response.follow(next_page, self.parse)
     print(filings)
