@@ -1,5 +1,0 @@
-1,,primary_doc.html,primary_doc.html,primary_doc.html
-1,,primary_doc.xml,primary_doc.xml,primary_doc.xml
-2,INFORMATION TABLE,a19-10004_1informationtable.html,a19-10004_1informationtable.html,a19-10004_1informationtable.html
-2,INFORMATION TABLE,a19-10004_1informationtable.xml,a19-10004_1informationtable.xml,a19-10004_1informationtable.xml
- ,Complete submission text file,0001104659-19-029714.txt,0001104659-19-029714.txt,0001104659-19-029714.txt
