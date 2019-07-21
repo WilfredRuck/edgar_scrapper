@@ -25,7 +25,7 @@ class EdgarSpider(scrapy.Spider):
     yield scrapy.Request(self.base_url + self.xml_page_url, callback=self.parse_xml)
 
   def parse_xml(self, response):
-    f = open("data.txt","w+")
+    f = open("data.csv","w+")
     products = response.css('tr')
     for i, product in enumerate(products):
        item = dict()
