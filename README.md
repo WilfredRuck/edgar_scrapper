@@ -15,7 +15,7 @@ Edgar Scrapper was built using <a href="https://www.python.org/downloads/">Pytho
 
 ## Getting Up and Running:
 
-1) Assuming you've installed Python from the above link, in your console, navigate to the app's folder and run `pip install -r requirements.txt`to install all dependencies.
+1) Assuming you've installed Python from the above link, in your console, navigate to the app's folder and run `sudo pip install -r requirements.txt --ignore-installed six`to install all dependencies.
 2) To run the program, run `scrapy runspider edgar_scrapper.py`.
 3) This will generate a .csv file in the project folder based on the CIK specified in edgar_scrapper.py (Default is 0001166559).
 

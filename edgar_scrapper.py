@@ -1,4 +1,5 @@
 import scrapy
+from io import open
 
 class EdgarSpider(scrapy.Spider):
   name = 'edgarspider'
@@ -25,7 +26,7 @@ class EdgarSpider(scrapy.Spider):
     yield scrapy.Request(self.base_url + self.xml_page_url, callback=self.parse_xml)
 
   def parse_xml(self, response):
-    f = open("data.csv","w+")
+    f = open("data.csv","w+", encoding="utf-8")
     products = response.css('tr')
     for i, product in enumerate(products):
        item = dict()
